@@ -40,11 +40,16 @@ blocks:
     debounce: '0'
     mode: QUADRATURE
     pins: [17, 18]
+  states:
+    state: true
 - name: encoder_count
   id: variable
   parameters:
     comment: ''
     value: encoder_input
+  states:
+    count: 0
+    state: true
 - name: center_freq
   id: variable_qtgui_range
   parameters:
